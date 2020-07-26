@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Cash - change owed
-
         int changeOwed = (int)getChange();
-
         printCentDetails(changeOwed);
 
     }
@@ -22,25 +20,22 @@ public class Main {
         }
 
         return (Math.round(changeOwed * 100));
-
     }
 
     public static void printCentDetails(int change) {
         int[] cents = { 1, 5, 10, 25 };
         int noOfCoins = 0;
+        int i = 3;
 
         System.out.println("Cents: ");
 
-        int i = 3;
         while (change > 0 && i >= 0) {
             if (change >= cents[i]) {
                 change = change - cents[i];
                 noOfCoins++;
                 System.out.println("  " + cents[i] + " cents.");
             }
-            else {
-                i--;
-            }
+            else i--;
         }
 
         System.out.println("No of coins: " + noOfCoins);
