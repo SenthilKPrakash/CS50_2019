@@ -1,8 +1,6 @@
-package PrakashLabs;
-
 import java.util.Scanner;
 
-public class Main {
+public class Cash {
     public static void main(String[] args) {
         //Cash - change owed
         int changeOwed = (int)getChange();

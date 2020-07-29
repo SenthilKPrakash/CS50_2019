@@ -1,8 +1,6 @@
-package PrakashLabs;
-
 import java.util.Scanner;
 
-public class Main {
+public class Mario_less_comfortable {
     public static void main(String[] args) {
         //Mario Pyramids
 

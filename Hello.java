@@ -1,8 +1,7 @@
-package PrakashLabs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Hello {
     public static void main(String[] args) {
         //Hello, Name!
         Scanner inputs = new Scanner(System.in);
