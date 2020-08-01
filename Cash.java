@@ -16,7 +16,7 @@ public class Cash {
         while (changeOwed<0) {
             changeOwed = getChange();
         }
-
+        inputs.close();
         return (Math.round(changeOwed * 100));
     }
 

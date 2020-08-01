@@ -10,6 +10,6 @@ public class Hello {
 
         String name = inputs.nextLine();
         System.out.println("Hello, " + name + "!");
-
+        inputs.close();
     }
 }

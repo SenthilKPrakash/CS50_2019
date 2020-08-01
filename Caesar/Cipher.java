@@ -26,7 +26,6 @@ public class Cipher {
     public void encipher() {
         char text[] = this.plainText.toCharArray();
         char returnText[] = new char[text.length];
-        int returnArrayIndex;
 
         for (int i=0; i<text.length; i++) {
             if ((text[i]>='a' && text[i]<='z') || (text[i]>='A' && text[i]<='Z')) {
@@ -40,6 +39,7 @@ public class Cipher {
 
     public void printCipherText() {
         System.out.println("The Cipher-text of the plain-text input is: " + this.cipherText);
+        input.close();
     }
 
     public char getIndex(char alp) {

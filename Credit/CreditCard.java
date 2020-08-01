@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class CreditCard {
     private long cardNo;
-    private boolean isValid = false;
     private String cardType;
 
     public void getCardNo() {
         Scanner inputs = new Scanner(System.in);
         System.out.println("Please enter your CreditCard card number: ");
         this.cardNo = inputs.nextLong();
+        inputs.close();
     }
 
     public void cardValidation() {
@@ -21,7 +21,6 @@ public class CreditCard {
             checkCardType();
         }
         else {
-            this.isValid = false;
             this.cardType = "INVALID";
         }
     }
@@ -77,16 +76,12 @@ public class CreditCard {
         Boolean isVisa = ((cardLength == 13 || cardLength == 16) && cardVal.startsWith("4"));
 
         if (isAmex) {
-            this.isValid = true;
             this.cardType = "AMEX";
         } else if (isMaster) {
-            this.isValid = true;
             this.cardType = "MASTERCARD";
         } else if (isVisa) {
-            this.isValid = true;
             this.cardType = "VISA";
         } else {
-            this.isValid = false;
             this.cardType = "INVALID";
         }
     }

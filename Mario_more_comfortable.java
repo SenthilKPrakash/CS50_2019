@@ -18,6 +18,7 @@ public class Mario_more_comfortable {
         while (height<1 || height>8) {
             height =  getHeight();
         }
+        inputs.close();
         return height;
     }
 
