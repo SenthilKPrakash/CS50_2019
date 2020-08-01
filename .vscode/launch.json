@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Caesar<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Caesar.Caesar",
+            "projectName": "CS50_2019_b7c4d05c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Cash<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Cash",
+            "projectName": "CS50_2019_b7c4d05c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Credit<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Credit.Credit",
+            "projectName": "CS50_2019_b7c4d05c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Hello<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "CS50_2019_b7c4d05c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Mario_less_comfortable<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Mario_less_comfortable",
+            "projectName": "CS50_2019_b7c4d05c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Mario_more_comfortable<CS50_2019_b7c4d05c>",
+            "request": "launch",
+            "mainClass": "Mario_more_comfortable",
+            "projectName": "CS50_2019_b7c4d05c"
+        }
+    ]
+}
