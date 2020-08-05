@@ -18,6 +18,7 @@ p {
     background-color: #24a19c;
     position: relative;
     padding-top: 100px;
+    padding-bottom: 360px;
 }
 .middle-container {
     background-color: #4ab4b1;
@@ -49,4 +50,9 @@ p {
     height: 250px;
     position: relative;
     top: 25px;
+}
+#mountain {
+    position: absolute;
+    top: 250px;
+    left: 300px;
 }
