@@ -1,25 +1,47 @@
+h1, h3 {
+    color: #66bfbf;
+}
+
+td img {
+    width: 200px;
+}
+
+body {
+  background-color: #4b5d67;
+  color: black;
+}
+
+p, thead, .center {
+    text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+hr {
+  border-color: #66bfbf;;
+  width: 7%;
+  border-width: 5px;
+  border-style: dotted none none;
+}
+
+.buttons {
+  width: 90px;
+  background-color: #66bfbf;;
+}
+
 div  {
     text-align: center;
     font-size: 50px;
-}
-table {
-    border: 3px solid blue;
-    border-collapse: collapse;
-}
-td, th {
-    border: 3px solid black;
-    padding: 10px;
 }
 .header {
     font-size: 30px;
     background-color: grey;
 }
-button {
-    font-size: 40px;
-    background-color: red;
-}
+
 button:hover {
-    background-color: green;
+    background-color: #b4f3f3;
 }
 #container {
     background-color: yellow;
@@ -28,11 +50,6 @@ button:hover {
     grid-column-gap: 10px;
     grid-row-gap: 5px;
     grid-template-columns: auto auto auto;
-}
-@media (min-width: 600px) {
-    body {
-        background-color: orange;
-    }
 }
 #container > div {
     background-color: skyblue;

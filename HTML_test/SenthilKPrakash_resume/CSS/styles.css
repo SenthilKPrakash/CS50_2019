@@ -1,0 +1,52 @@
+/*-------------------------------  Tag style  ---------------------------------------*/
+body {
+    background-color: #84e6e2;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 200%;
+}
+h1, p {
+    margin: 0px;
+    padding: 4px;
+}
+p {
+    font-family: 'Damion', cursive;
+}
+/*-------------------------------  Class style  ---------------------------------------*/
+.top-container {
+    background-color: #24a19c;
+    position: relative;
+    padding-top: 100px;
+}
+.middle-container {
+    background-color: #4ab4b1;
+}
+.middle-container, .bottom-container {
+    font-family: 'Montserrat', sans-serif;
+}
+.bottom-container {
+    background-color: #24a19c;
+}
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.skill-frontend {
+    height: 300px;
+}
+.skill-backend {
+    height: 300px;
+}
+/*-------------------------------  ID style  -----------------------------------------*/
+#senthil_pic {
+    height: 250px;
+    position: relative;
+    top: 25px;
+}
