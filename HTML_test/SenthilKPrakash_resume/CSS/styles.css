@@ -1,30 +1,37 @@
+/*-------------------------------  Mixed style  -------------------------------------*/
+h1, #top-paragraph, h3, .footer-link, .btn {
+    color: #834013;
+}
 /*-------------------------------  Tag style  ---------------------------------------*/
 body {
     background-color: #84e6e2;
     margin: 0px;
     text-align: center;
     font-family: 'Sacramento', cursive;
-    font-size: 200%;
+    font-size: 2rem;
 }
-h1, p {
-    margin: 0px;
+h1 {
+    margin: 0 auto 0 auto;
     padding: 4px;
+    font-size: 5.625rem;
 }
 p {
-    font-family: 'Damion', cursive;
+    margin: 0px;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
 }
 /*-------------------------------  Class style  ---------------------------------------*/
 .top-container {
     background-color: #24a19c;
     position: relative;
     padding-top: 100px;
-    padding-bottom: 360px;
+    padding-bottom: 300px;
 }
 .middle-container {
     background-color: #4ab4b1;
 }
 .middle-container, .bottom-container {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Damion', cursive;
 }
 .bottom-container {
     background-color: #24a19c;
@@ -36,14 +43,31 @@ p {
 }
 .bottom-cloud {
     position: absolute;
-    left: 300px;
+    left: 200px;
     bottom: 300px;
 }
-.skill-frontend {
-    height: 300px;
+.skill-png1 {
+    width: 30%;
+    float: left;
+    padding-right: 30px;
 }
-.skill-backend {
-    height: 300px;
+.skill-png2 {
+    width: 30%;
+    float: right;
+    padding-right: 30px;
+}
+.btn, .footer-link {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn:hover, .footer-link:hover {
+    color: #b4880e;
+}
+.skill-row {
+    margin: 50px auto 50px auto;
+    width: 80%;
+    text-align: left;
+    line-height: 1.5;
 }
 /*-------------------------------  ID style  -----------------------------------------*/
 #senthil_pic {
@@ -53,6 +77,12 @@ p {
 }
 #mountain {
     position: absolute;
-    top: 250px;
+    top: 230px;
     left: 300px;
+}
+#top-paragraph {
+    font-family: 'Damion', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: normal;
 }
