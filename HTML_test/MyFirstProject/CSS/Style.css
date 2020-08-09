@@ -1,0 +1,43 @@
+/*-------------------------------  Tag style  ---------------------------------------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/*-------------------------------  Class style  ---------------------------------------*/
+.btn {
+    margin: 5% 3% 5% 0;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------------------------------  ID style  -----------------------------------------*/
+#iphone-dog-img {
+    padding: 0 0 15% 0;
+    width: 50%;
+    /* height: 95%; */
+    transform: rotate(25deg);
+}
+#title {
+    background-color: #ff4c68;
+    color: white;
+}
