@@ -20,7 +20,18 @@ p {
     padding: 4px;
     font-family: 'Montserrat', sans-serif;
 }
+hr {
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    border-top: 10px dotted grey;
+    width: 10%;
+}
 /*-------------------------------  Class style  ---------------------------------------*/
+.copyright {
+    font-size: 1.2vw;
+    color: antiquewhite;
+}
 .top-container {
     background-color: #24a19c;
     position: relative;
@@ -35,6 +46,8 @@ p {
 }
 .bottom-container {
     background-color: #24a19c;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .top-cloud {
     position: absolute;
@@ -56,11 +69,48 @@ p {
     float: right;
     padding-right: 30px;
 }
-.btn, .footer-link {
+.btn {
+    box-shadow:inset 0px 1px 0px 0px #128996;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1aa19f), color-stop(1, #207391) );
+    background-color:#31e0dd;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+	text-indent:0px;
+	border:1px solid #26a3ac;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:normal;
+	font-style:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:25px;
+	padding-right:25px;
+	text-decoration:none;
+	text-align:center;
+    text-shadow:1px 1px 0px #2b9aac;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.btn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #207391), color-stop(1, #1aa19f) );
+	background:-moz-linear-gradient( center top, #207391 5%, #1aa19f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#207391', endColorstr='#1aa19f');
+	background-color:#207391;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+.footer-link {
     font-size: 1.5rem;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-.btn:hover, .footer-link:hover {
+.footer-link:hover {
     color: #b4880e;
 }
 .skill-row {
