@@ -1,0 +1,142 @@
+/*------------------------ Mixed Style ------------------------------------------*/
+
+/*------------------------ Tag Style   ------------------------------------------*/
+body {
+    margin: 0%;
+}
+h1 {
+    color: #66BFBF;
+    font-size: 7vw;
+    font-family: 'Sacramento', cursive;
+    margin: 0% auto 0% auto;
+    padding-top: 10%;
+    width: 40%;
+}
+h2 {
+    color: #66BFBF;
+    font-size: 3.5vw;
+    margin:  auto auto auto;
+    font-family: 'Roboto', sans-serif;
+}
+h3 {
+    color: #66BFBF;
+    font-weight: bold;
+    margin: auto;
+}
+p {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    margin: auto;
+    color: grey;
+    line-height: 28px;
+}
+hr {
+    border-top: 5px dotted rgb(153, 146, 146);
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 10%;
+}
+/*------------------------ Class Style ------------------------------------------*/
+.top-container {
+    text-align: center;
+    background-color: #EAF6F6;
+}
+.middle-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: auto 300px auto 300px;
+}
+.bottom-container {
+    background-color: #66BFBF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.line-height150 {
+    text-align: center;
+    line-height: 150px;
+}
+.line-height100 {
+    line-height: 100px;
+}
+.mybutton {
+	box-shadow:inset 0px 1px 0px 0px #128996;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1aa19f), color-stop(1, #207391) );
+    background-color:#31e0dd;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+	text-indent:0px;
+	border:1px solid #26a3ac;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:normal;
+	font-style:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:25px;
+	padding-right:25px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #2b9aac;
+}
+.mybutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #207391), color-stop(1, #1aa19f) );
+	background:-moz-linear-gradient( center top, #207391 5%, #1aa19f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#207391', endColorstr='#1aa19f');
+	background-color:#207391;
+}
+.mybutton:active {
+	position:relative;
+	top:1px;
+}
+.html-img {
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+}
+.chillies-img {
+    width: 20%;
+    float: right;
+    margin-left: 30px;
+}
+.skill-row {
+    text-align: left;
+}
+.skill-head, .skill-footer {
+    text-align: center;
+}
+.footer-href {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1vw;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    color: #11999E;
+}
+.footer-href:hover {
+    color: #EAF6F6;
+}
+.footer-copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+}
+/*------------------------ ID Style    ------------------------------------------*/
+#top-cloud {
+    position: absolute;
+    padding-top: 6%;
+    right: 20%;
+    width: 10%;
+}
+#bottom-cloud{
+    position: absolute;
+    left: 20%;
+    width: 10%;
+}
+#mountain {
+    width: 50%;
+}
