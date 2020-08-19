@@ -1,0 +1,83 @@
+
+var buttonColors = ["red", "blue", "green", "yellow"];
+
+var gamePattern = [];
+
+var userClickedPattern = [];
+
+var level = 0;
+
+var isStarted = false;
+
+
+//Check for Keypress to start the game.
+$(document).keypress(function () {
+    //Generate Game Pattern and show the animated fade & sound.
+    while (!isStarted) {
+        //Level
+        changeLevelValues();
+
+        //Set Game Pattern
+        nextSequence();
+
+        isStarted = true;
+    }
+});
+
+//Get User's Key-input
+$(".btn").click(function () {
+    getUserClickedPattern();
+
+    //Check GamePattern & User's Pattern
+    checkAnswer();
+});
+
+function nextSequence() {
+
+    var randomNumber = Math.floor(Math.random() * 4);
+    var randomChosenColor = buttonColors[randomNumber];
+    gamePattern.push(randomChosenColor);
+
+    $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
+
+    playSound(randomChosenColor);
+    userClickedPattern = [];
+}
+
+function getUserClickedPattern() {
+    var userChosenColor = $(this).attr("id");
+    userClickedPattern.push(userChosenColor);
+    //console.log(userClickedPattern);
+    playSound(userChosenColor);
+    animatePress(userChosenColor);
+
+    //My version -->
+    // $(".btn").click(function (event) {
+    //     userClickedPattern.push(event.target.id)
+    // });
+}
+
+function playSound(color) {
+    var audio = new Audio("sounds/" + color + ".mp3");
+    audio.play();
+}
+
+function animatePress(color) {
+    $("#" + color).addClass("pressed");
+    setTimeout(function () {
+        $("#" + color).removeClass("pressed");
+    }, 100);
+}
+
+function changeLevelValues() {
+    $("#level-title").text("Level " + level);
+    level++;
+}
+
+function checkAnswer() {
+    if (!(gamePattern === userClickedPattern)) {
+        isGameOn = false;
+        isStarted = true;
+        $("#level-title").text("Game Over, Refresh to start again!");
+    }
+}
